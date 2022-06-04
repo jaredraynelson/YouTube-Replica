@@ -1,0 +1,215 @@
+.header
+{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgb(254,254,254);
+    box-shadow: 1px 1px 1px rgb(210, 210, 210);
+
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(210, 210, 210);
+    z-index: 101;
+}
+
+.left-section
+{
+    /* background-color: lightblue; */
+    width: 150px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mid-section
+{
+    /* background-color: lightcyan; */
+    flex: 1;
+    margin-left: 75px;
+    margin-right: 35px;
+    max-width: 500px;
+    align-items: center;
+    display: flex;
+    
+    /* flex-direction: row; this is the default */
+}
+
+.right-section
+{
+    /* background-color: beige; */
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.youtube-logo
+{
+    height: 19px;
+
+}
+
+.hamburger-menu
+{
+    height: 25px;
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+.search-button
+{
+    height: 36px;
+    width: 60px;
+    background-color: rgb(245, 245, 245);
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+    margin-left: -2px;
+    border-radius: 2px;
+    margin-right: 10px;
+    
+}
+
+.search-button, 
+.voice-search-button, 
+.upload-icon-container,
+.notification-icon-container,
+.youtube-apps-container,
+.current-user-picture-container
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.notification-icon-container .tooltip,
+.youtube-apps-container .tooltip,
+.current-user-picture-container .tooltip
+{
+    font-size: 12px;
+    font-family: Roboto, Arial;
+    position: absolute;
+    background-color: rgb(199, 199, 199);
+    color: black;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 4px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 150ms;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.notification-icon-container:hover .tooltip,
+.youtube-apps-container:hover .tooltip,
+.current-user-picture-container:hover .tooltip
+{
+    opacity: 1;
+    
+}
+
+
+
+.voice-search-button
+{
+    height: 36px;
+    width: 36px;
+    border-radius: 18px;
+    background-color: rgb(245, 245, 245);
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+    
+    
+}
+
+.search-bar
+{
+    flex: 1;
+    width: 0;
+    height: 32px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+}
+/* We can use z-index to place objects over other objects. the higher 'z-index' the more dominance it has. */
+/* position absolute that's placed within a position fixed element makes it relative to the box it's contained in. */
+
+.search-bar::placeholder
+{
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+
+.search-icon
+{
+    /* background-color: rgb(219, 219, 219); */
+    height: 24px;
+    border: none;
+    
+}
+
+.voice-search-icon
+{
+    border: none;
+    height: 22px;
+    padding-right: px;
+
+}
+
+.upload-icon, .youtube-apps, .notification-icon
+{
+    height: 24px;
+}
+
+.current-user-picture
+{
+    height: 32px;
+    border-radius: 16px;
+}
+
+.notification-icon-container
+{
+    margin-top: 2px;
+    position: relative;
+    
+
+}
+
+.notification-count
+{
+    position: absolute;
+    top: -3px;
+    right: -6px;
+    background-color: red;
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
