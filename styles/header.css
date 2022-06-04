@@ -10,7 +10,7 @@
     left: 0px;
     right: 0px;
     background-color: rgb(254,254,254);
-    box-shadow: 1px 1px 1px rgb(210, 210, 210);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.116);
 
     border-bottom-width: 1px;
     border-bottom-style: solid;

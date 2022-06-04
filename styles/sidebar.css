@@ -11,7 +11,7 @@
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgb(210, 210, 210);
-    box-shadow: 2px 2px 2px rgb(210, 210, 210);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.116);
     padding-top: 5px;
 }
 
