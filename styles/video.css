@@ -3,6 +3,10 @@
   width: 100%;
 }
 
+.thumbnail:hover {
+  cursor: pointer;
+}
+
 .video-title 
 {
   margin-top: 0;
@@ -11,6 +15,11 @@
   line-height: 20px;
   margin-bottom: 10px;
 }
+
+.video-title:hover{
+  cursor: pointer;
+}
+
 
 
 .channel-picture
@@ -38,18 +47,35 @@
   background-color: rgb(253, 253, 253);
   width: 190px;
   height: 64px;
-  bottom: -30px;
+  bottom: -38px;
   right: -150px;
-  box-shadow: 1px 2px 2px 5px rgba(215,215,215,1);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.082);
   border-radius: 8px;
   opacity: 0;
   transition: 150ms;
 }
 
-.channel-picture:hover .profile-popup
+.channel-picture:hover .profile-popup 
 {
   cursor: pointer;
   opacity: 1;
+}
+
+.profile-popup2 {
+  align-items: center;
+  white-space: nowrap;
+  position: absolute;
+  z-index: 102;
+  display: flex;
+  background-color: rgb(253, 253, 253);
+  width: 190px;
+  height: 64px;
+  bottom: -38px;
+  right: -150px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.082);
+  border-radius: 8px;
+  opacity: 0;
+  transition: 150ms;
 }
 
 .profile-popup-picture
@@ -114,15 +140,40 @@
 
 .video-grid
 {
+  
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 16px;
   row-gap: 40px;
+  /* text-decoration: underline; */
+  /* inheritance works best with text properties. */
+
 }
+
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+}
+
+@media (mix-width: 751px) and (max-width: 999px) {
+  .video-grid{
+  grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+}
+
+
 
 .video-time
 {
-  font-family: Roboto, Arial;
   font-size: 12px;
   font-weight: 500;
   padding: 4px;

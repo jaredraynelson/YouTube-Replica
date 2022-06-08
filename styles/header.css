@@ -91,6 +91,13 @@
     justify-content: center;
 }
 
+.search-button:hover, .voice-search-button:hover,
+ .notification-icon-container:hover, .youtube-apps-container:hover,
+ .upload-icon-container:hover, .current-user-picture-container:hover,
+ .youtube-logo:hover, .hamburger-menu:hover {
+    cursor: pointer;
+}
+
 .search-button .tooltip,
 .voice-search-button .tooltip,
 .upload-icon-container .tooltip,
@@ -99,7 +106,6 @@
 .current-user-picture-container .tooltip
 {
     font-size: 12px;
-    font-family: Roboto, Arial;
     position: absolute;
     background-color: rgb(199, 199, 199);
     color: black;
@@ -127,7 +133,6 @@
 }
 
 
-
 .voice-search-button
 {
     height: 36px;
@@ -148,10 +153,8 @@
     height: 32px;
     padding-left: 10px;
     font-size: 16px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: lightgray;
     border-radius: 2px;
+    border: 1px solid lightgray;
     box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
 }
 /* We can use z-index to place objects over other objects. the higher 'z-index' the more dominance it has. */
@@ -159,7 +162,6 @@
 
 .search-bar::placeholder
 {
-    font-family: Roboto, Arial;
     font-size: 16px;
 }
 
@@ -205,7 +207,6 @@
     right: -6px;
     background-color: red;
     color: white;
-    font-family: Roboto, Arial;
     font-size: 11px;
     padding-left: 5px;
     padding-right: 5px;
